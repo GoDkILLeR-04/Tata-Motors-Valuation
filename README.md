@@ -1,4 +1,4 @@
-# Comprehensive Stock Valuation Models
+# Tata Motors Stock Valuation 
 
 This repository provides a suite of stock valuation models—**Discounted Cash Flow (DCF)**, **Relative Valuation**, and **Sum of the Parts (SOTP)**—to help you estimate the intrinsic and relative value of a publicly traded company. Whether you want to analyze a single-segment business or a diversified conglomerate, this toolkit offers practical, customizable templates for your analysis.
 
