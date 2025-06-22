@@ -1,4 +1,4 @@
-# DCF Model – Bull Case Projection
+# DCF Model – CAGR Projection
 
 This model uses the **Bull Case** projection method, incorporating optimistic assumptions about growth, margins, and market conditions.
 
