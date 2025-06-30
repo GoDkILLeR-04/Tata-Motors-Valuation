@@ -13,7 +13,6 @@ Relative valuation, also known as **comparable company analysis (CCA)** or **pee
   - Price/Earnings (P/E)
   - Price/Sales (P/S)
   - EV/EBITDA
-  - Price/Book (P/B)
   - And others as needed
 - **Customizable Data Input:** Enter financial data manually or link to data sources (e.g. Yahoo Finance, Bloomberg, APIs).
 - **Summary Output:** Calculates implied valuation ranges for the target company based on peer multiples.
@@ -23,9 +22,7 @@ Relative valuation, also known as **comparable company analysis (CCA)** or **pee
 
 ### Prerequisites
 
-- [Excel](https://www.microsoft.com/en/microsoft-365/excel), [Google Sheets](https://sheets.google.com/),  
-  _or_
-- Python 3.x if using the script-based model (see `/src` directory).
+- [Excel](https://www.microsoft.com/en/microsoft-365/excel),
 
 ### Usage
 
