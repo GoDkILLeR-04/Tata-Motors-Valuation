@@ -14,7 +14,7 @@ Relative valuation, also known as **comparable company analysis (CCA)** or **pee
   - Price/Sales (P/S)
   - EV/EBITDA
   - And others as needed
-- **Customizable Data Input:** Enter financial data manually or link to data sources (e.g. Yahoo Finance, Bloomberg, APIs).
+- **Customizable Data Input:** Enter financial data manually or link to data sources (e.g. Screener.in, Tijori Finance, Tickertape).
 - **Summary Output:** Calculates implied valuation ranges for the target company based on peer multiples.
 - **Sensitivity Analysis:** Test the impact of using different peer groups or adjusting multiples.
 
@@ -58,7 +58,6 @@ Similar calculations are performed for other multiples to triangulate a reasonab
 ## Files
 
 - `Relative_Valuation_Model.xlsx` – Main spreadsheet model
-- `/src/relative_valuation.py` – Optional Python implementation
 - `README.md` – This file
 
 ## Contributing
