@@ -15,16 +15,16 @@ This repository contains a Discounted Cash Flow (DCF) model for valuing business
 
 This DCF model allows you to choose from three projection methods for estimating future cash flows:
 
-1. **CAGR_Model Projection:**  
+1. **CAGR Projection:**  
    Uses management’s most likely scenario based on current trends and assumptions.
 
-2. **CAGR_Model Projection:**  
+2. **Linear Regression Projection:**  
    Assumes optimistic growth and margin improvements, reflecting a best-case scenario.
 
-3. **Segment_Model Projection:**  
+3. **Segment (CV,PV,JLR,Others) Projection:**  
    Incorporates conservative estimates, considering potential risks and downturns.
 
-4. **Scenario_Inputs Projection:**  
+4. **Scenario (Best,Base and Worst) Projection:**  
    Incorporates conservative estimates, considering potential risks and downturns.
 
 You can input assumptions for each scenario to see how the valuation changes under different outlooks.
@@ -33,8 +33,7 @@ You can input assumptions for each scenario to see how the valuation changes und
 
 ### Prerequisites
 
-- [Excel](https://www.microsoft.com/en/microsoft-365/excel)
-
+- [Excel](https://github.com/GoDkILLeR-04/Tata-Motors-Valuation/blob/main/DCF%20Model/Tata%20Motors%20DCF.xlsx)
 ### Usage
 
 1. **Clone the repository:**
