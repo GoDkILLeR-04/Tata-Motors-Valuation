@@ -35,7 +35,7 @@ This repository delivers a comprehensive suite of professional valuation models 
   - **Integrated SOTP**: Valuation by segment (JLR, CV, PV, Others) using peer-relevant multiples for each business, leveraging the comps sheets.
 
 - **Valuation Report:**  
-  Investment-grade PDF report synthesizing key findings, target prices, segment analysis, methodology, and market context—ready for presentations or interviews.
+  Investment-grade PDF report synthesizing key findings, target prices, segment analysis, methodology, and market context ready for presentations or interviews.
 
 ---
 
