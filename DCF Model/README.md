@@ -1,78 +1,79 @@
-# Discounted Cash Flow (DCF) Model
+# Tata Motors FY25 Discounted Cash Flow (DCF) Model – README
 
-This repository contains a Discounted Cash Flow (DCF) model for valuing businesses, projects, or assets. The DCF approach estimates the value of an investment based on its expected future cash flows, which are discounted to the present value using a chosen discount rate.
+## Overview
 
-## Features
+This repository contains a robust Discounted Cash Flow (DCF) valuation model for Tata Motors, constructed to investment banking and equity research standards. The model incorporates four independent revenue forecasting approaches, scenario analysis, segment-level insights, and sensitivity tables, offering a transparent and flexible toolkit for understanding Tata Motors’ intrinsic value as of FY25.
 
-- **Multiple Projection Methods:** Supports three distinct approaches for forecasting future cash flows.
-- **Forecast of Free Cash Flows (FCF):** Input historical and projected financials to estimate future FCFs.
-- **Discounting to Present Value:** Apply a discount rate (typically WACC) to bring future FCFs to present value.
-- **Terminal Value Calculation:** Estimate the value beyond the explicit forecast period.
-- **Sensitivity Analysis:** Assess how changes in key assumptions (growth rates, WACC, etc.) impact valuation.
-- **User-Friendly Interface:** Easy-to-use spreadsheet or script for quick scenario analysis.
+## Key Features
 
-## Projection Methods
+- **Multi-Method Revenue Forecasting**:
+  - Segment-based (JLR, CV, PV, Others; bottom-up build)
+  - Scenario-based (Best/Base/Worst; custom growth rates)
+  - Historical CAGR-based projection
+  - Linear Regression trend modeling
+- **Assumptions Fully Disclosed**:
+  - WACC, terminal growth, EBIT margin, D&A, CapEx, and NWC are clearly outlined and editable
+- **Professional DCF Structure**:
+  - Forecast period: FY25–FY29, with separate DCF sheets for each scenario
+  - Full build: EBIT, taxes, D&A, CapEx, NWC, FCF, terminal value, PV calculations
+  - Equity value, EV, and per-share valuations for each method
+- **Sensitivity Analysis**:
+  - Dynamic tables showing implied share price ranges for variations in WACC and terminal growth
+- **Scenario Comparison Table**:
+  - Instantly compare Best/Base/Worst, CAGR, and regression outcomes side by side
 
-This DCF model allows you to choose from three projection methods for estimating future cash flows:
+## Model Outputs
 
-1. **CAGR Projection:**  
-   Uses management’s most likely scenario based on current trends and assumptions.
+- **Implied Share Prices (All Methods):**
+  - Segment-Based: ₹1,371
+  - Scenario – Best: ₹1,527
+  - Scenario – Base: ₹1,273
+  - Scenario – Worst: ₹899
+  - CAGR-Based: ₹1,273
+  - Linear Regression: ₹1,492
+- **Market Price Benchmark**:
+  - CMP as of July 2025: ₹687
+  - Upside/downside metrics shown for each method
 
-2. **Linear Regression Projection:**  
-   Assumes optimistic growth and margin improvements, reflecting a best-case scenario.
+## File Structure
 
-3. **Segment (CV,PV,JLR,Others) Projection:**  
-   Incorporates conservative estimates, considering potential risks and downturns.
+- **Tata-Motors-DCF.xlsx**
+  - `Summary`: Top-down review, major assumptions, key outputs, and sensitivity heatmaps
+  - `DCF-Segment`, `DCF-Best`, `DCF-Base`, `DCF-Worst`, `DCF-CAGR`, `DCF-LINEAR REGRESSION`: Full valuation logic, FCF and terminal value breakdowns, share price outputs
+  - `Segment`: Revenue breakdown by JLR, CV, PV, Others (with forecast details)
+  - `WACC`, `CapEx & NWC Forecast`, `IS`, `BS`, `CFS`: Model underpinnings, historicals, and critical assumptions
 
-4. **Scenario (Best,Base and Worst) Projection:**  
-   Incorporates conservative estimates, considering potential risks and downturns.
+## Key Calculation Formulas
 
-You can input assumptions for each scenario to see how the valuation changes under different outlooks.
+- **DCF Enterprise Value:**
+   - EV = Σ (FCF_t / (1+WACC)^t) + (Terminal Value / (1+WACC)^n)
+- **Equity Value:**
+   - Equity Value = Enterprise Value + Cash – Debt
+- **Implied Share Price:**
+   - Implied Share Price = Equity Value / Shares Outstanding
 
-## Getting Started
+## Assumptions/Notes
 
-### Prerequisites
+- **No actuals from FY25** are used: all projections were made using the latest available financial data up to FY24, maintaining pure forward-looking logic.
+- All scenario rates, margin estimates, and working capital/capex ratios are editable on the relevant sheets.
+- Market price and number of shares as per data available July 2025.
+- Shares outstanding: ~383.25 crore (FY25E)
+- WACC default: ~11.2%; Terminal growth default: 4%
+- All currency values in ₹ crore unless otherwise stated.
 
-- [Excel](https://github.com/GoDkILLeR-04/Tata-Motors-Valuation/blob/main/DCF%20Model/Tata%20Motors%20DCF.xlsx)
-### Usage
+## How to Update
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/dcf-model.git
-    ```
-2. **Open the model:**
-    - For the spreadsheet: Open `DCF_Model.xlsx`
+- Edit revenue/EBIT margin forecasts in the relevant sheet of each approach.
+- Adjust major assumptions directly in the `Summary` or `Assumptions` sheets.
+- Update market price and share count in the `Summary` sheet for current upside stats.
+- All calculated outputs, sensitivity tables, and scenario results will update automatically.
 
-3. **Input Assumptions:**
-    - Revenue, EBIT, CAPEX, NWC changes, etc.
-    - Discount rate (WACC)
-    - Terminal growth rate
-    - Choose and fill out assumptions for each projection method
+## License
 
-4. **Review Outputs:**
-    - Present value of forecasted cash flows for all scenarios
-    - Terminal value and present value
-    - Implied enterprise and equity value
+Open for academic, non-commercial use. If you adapt for publication or commercial purposes, please attribute the structure and formulas.
 
-5. **Adjust Assumptions:** Use built-in sensitivity tables or sliders to test different scenarios.
+**Contact:**  
+For feedback, questions, or custom model requests, reach out via LinkedIn or GitHub issues.
 
-## Example
+*(Last updated: July 31, 2025)*
 
-Here’s a simplified DCF formula for reference:
-
-```
-DCF = FCF1/(1+r)^1 + FCF2/(1+r)^2 + ... + FCFn/(1+r)^n + TV/(1+r)^n
-```
-Where:
-- `FCF` = Free Cash Flow in each forecast period
-- `r` = Discount rate (WACC)
-- `TV` = Terminal Value
-
-## Files issue or submit a pull request for impr
-
-- `DCF_Model.xlsx` – Main spreadsheet model
-- `README.md` – This file
-
-## Contributing
-
-Contributions are welcome! Please open anovements.
