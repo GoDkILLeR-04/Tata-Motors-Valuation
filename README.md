@@ -1,105 +1,101 @@
-# Tata Motors Stock Valuation 
+# Tata Motors FY25 Valuation Toolkit
 
-This repository provides a suite of stock valuation models **Discounted Cash Flow (DCF)**, **Relative Valuation**, and **Sum of the Parts (SOTP)** to help you estimate the intrinsic and relative value of a publicly traded company. Whether you want to analyze a single-segment business or a diversified conglomerate, this toolkit offers practical, customizable templates for your analysis.
+## Overview
 
----
-
-## Overview of Valuation Methods
-
-### 1. Discounted Cash Flow (DCF)
-
-DCF valuation estimates a company's intrinsic value by projecting its future free cash flows and discounting them to the present using an appropriate discount rate (typically the Weighted Average Cost of Capital, or WACC).  
-- **Best for:** Companies with predictable cash flows.
-- **Key Inputs:** Revenue growth, margins, capital expenditures, working capital changes, discount rate, terminal growth rate.
-
-### 2. Relative Valuation
-
-Relative valuation compares the target company’s valuation multiples (such as P/E, EV/EBITDA, P/B) to those of similar companies in its peer group. This method assesses whether a stock is undervalued or overvalued relative to comparable businesses.  
-- **Best for:** Benchmarking against industry peers.
-- **Key Inputs:** Peer group selection, financial metrics, multiples.
-
-### 3. Sum of the Parts (SOTP)
-
-SOTP valuation is used for diversified firms or conglomerates. Each business segment or subsidiary is valued independently (using DCF, relative, or asset-based methods) and then aggregated, with corporate-level adjustments (like cash, debt, and minority interests) to determine total equity value.  
-- **Best for:** Multi-segment companies with distinct businesses.
-- **Key Inputs:** Segment data, choice of valuation method per segment, corporate adjustments.
+This repository delivers a comprehensive suite of professional valuation models and reports for Tata Motors. It supports investment analysis, academic work, equity research preparation, and portfolio presentations. The repo uniquely integrates Discounted Cash Flow (DCF), Relative Valuation (Comps with integrated SOTP), and a synthesized Equity Valuation Report—each fully documented for transparency and adaptability.
 
 ---
 
-## Directory Structure
+## Repository Structure
 
-```
 /Tata Motors-valuation
 │
-├── README.md                    # This file
+├── README.md # [This file]
+├── Valuation Report/
 │
 ├── DCF Model/
-│   ├── DCF_Model.xlsx
-│   └── README.md
+│ ├── DCF_Model.xlsx
+│ └── README.md
 │
 ├── Relative Valuation Model/
-│   ├── Relative_Valuation_Model.xlsx
-│   └── README.md
-│
-├── Sum of the Parts(STOP) Model/
-│   ├── SOTP_Valuation_Model.xlsx
-│   └── README.md
-│
-└── src/
-    ├── dcf_model.py
-    ├── relative_valuation.py
-    └── sotp_valuation.py
-```
+│ ├── Relative_Valuation_Model.xlsx
+│ └── README.md
+
 
 ---
 
-## Getting Started
+## Contents
 
-### Prerequisites
+- **DCF Model:**  
+  Complete bottom-up DCF Excel model featuring segment-based and scenario-driven projections, WACC/terminal value sensitivity, and scenario tables. Follows professional equity research standards.
 
-- [Excel](https://www.microsoft.com/en/microsoft-365/excel)  
- 
-### How to Use
+- **Relative Valuation Model:**  
+  Peer multiples-based model (EV/EBITDA, EV/Revenue, P/E) applying both Indian and global comparables. Includes robust outlier screening (excludes two-wheeler specialists for comparability).  
+  - **Integrated SOTP**: Valuation by segment (JLR, CV, PV, Others) using peer-relevant multiples for each business, leveraging the comps sheets.
 
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/stock-valuation-models.git
-    ```
+- **Valuation Report:**  
+  Investment-grade PDF report synthesizing key findings, target prices, segment analysis, methodology, and market context—ready for presentations or interviews.
 
-2. **Select a Model:**
-    - For **DCF analysis**, go to `/dcf/DCF_Model.xlsx`.
-    - For **Relative Valuation**, go to `/relative/Relative_Valuation_Model.xlsx`.
-    - For **SOTP Valuation**, go to `/sotp/SOTP_Valuation_Model.xlsx`.
-
-3. **Input Data:**
-    - Fill in the required financial and market data for the target company.
-    - For SOTP, provide segment-specific inputs and any holding-level adjustments.
-
-4. **Review Outputs:**
-    - Each model provides implied valuation outputs and summary tables.
-    - Use built-in sensitivity analysis features to test different scenarios.
+- **Python Source Code (`src/`):**  
+  Scripts to automate or replicate the core logic of the Excel models for those preferring code-based workflow or custom extensions.
 
 ---
 
-## Example Scenarios
+## Key Peer Tickers
 
-- **DCF Example:** Project free cash flows for five years, apply a terminal growth rate, and discount at WACC to get intrinsic value.
-- **Relative Example:** Compare your target’s EV/EBITDA to peers, then apply the median multiple to your target’s EBITDA.
-- **SOTP Example:** Value each segment using the most appropriate method, sum the parts, and adjust for cash and debt to get total equity value.
+| Company           | Exchange / Country            | Ticker Symbol         |
+|-------------------|------------------------------|-----------------------|
+| **Indian Peers**  |                              |                       |
+| Tata Motors       | NSE / BSE (India)            | TATAMOTORS / 500570   |
+| Maruti Suzuki     | NSE / BSE (India)            | MARUTI / 532500       |
+| M&M               | NSE / BSE (India)            | M&M / 500520          |
+| Force Motors      | NSE / BSE (India)            | FORCEMOT / 500033     |
+| Ashok Leyland     | NSE / BSE (India)            | ASHOKLEY / 500477     |
+| Hyundai India     | NSE / BSE (India)            | HYUNDAI / 544274      |
+| **Global Peers**  |                              |                       |
+| Mercedes-Benz     | Xetra / Germany              | MBG                   |
+| Volkswagen Group  | Xetra / Germany              | VOW3                  |
+| Toyota Motor Corp | Tokyo / Japan                | 7203                  |
+| BMW               | Xetra / Germany              | BMW                   |
+| Volvo Cars        | Nasdaq Stockholm / Sweden    | VOLCAR-B              |
+| General Motors    | NYSE / USA                   | GM                    |
+| Hyundai Motor Co. | Korea Exchange / S. Korea    | 005380                |
+| Ford Motor Co.    | NYSE / USA                   | F                     |
 
 ---
 
-## When to Use Each Model
+## High-Level Methodology
 
-| Model                | Best For                                      |
-|----------------------|-----------------------------------------------|
-| **DCF**              | Companies with stable, predictable cash flows |
-| **Relative**         | Peer benchmarking and market positioning      |
-| **SOTP**             | Diversified firms or conglomerates            |
+- **DCF Valuation:**  
+  Projects future free cash flows using segment- and scenario-specific inputs, discounts at WACC, and computes terminal value. Sensitivity tables provided.
+
+- **Relative Valuation:**  
+  Benchmarks Tata Motors against listed Indian and global automotive peers using FY24/FY25 data, calculates implied share prices via peer multiples, and excludes outlier business models for fairer comparison.
+
+- **SOTP (Integrated in Relative Model):**  
+  Values each Tata Motors segment with the most relevant peer group multiple. Sums segment values, subtracts net debt, and provides per-share outputs.
 
 ---
 
-## Contributing
+## How To Use
 
-Contributions are welcome! Please open an issue or submit a pull request for improvements or new features.
+- Explore the `/DCF Model` and `/Relative Valuation Model` subfolders for spreadsheets and detailed READMEs.
+- Refer to the `/Valuation Report` for a one-stop, presentation-ready summary.
+- Update models or report with new data to keep valuations current—formulas auto-update core outputs.
+
+---
+
+## Disclaimers & Licensing
+
+- All financial data and modeling based on FY24 (global) and FY25E (Indian) with full citation of sources where applicable.
+- Hyundai India is treated as both an Indian peer due to dual market presence.
+- Open for academic and non-commercial use. Please attribute this repo if you use the models, code, or report structure elsewhere.
+
+---
+
+**Contact:**  
+For inquiries, feedback, or collaboration requests, please open an issue or connect via LinkedIn.
+
+_Last updated: July 31, 2025_
+
 
