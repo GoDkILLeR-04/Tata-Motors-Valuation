@@ -36,9 +36,6 @@ This repository delivers a comprehensive suite of professional valuation models 
 - **Valuation Report:**  
   Investment-grade PDF report synthesizing key findings, target prices, segment analysis, methodology, and market context—ready for presentations or interviews.
 
-- **Python Source Code (`src/`):**  
-  Scripts to automate or replicate the core logic of the Excel models for those preferring code-based workflow or custom extensions.
-
 ---
 
 ## Key Peer Tickers
