@@ -1,4 +1,3 @@
-readme_text = """
 # Tata Motors FY25 Relative Valuation – README
 
 ## Overview
@@ -110,5 +109,5 @@ For questions, feedback, or model customization, DM the repo owner or connect on
 *Made for deep-dive equity research and professional transparency.*
 
 *(Last updated: July 31, 2025)*
-"""
+
 
