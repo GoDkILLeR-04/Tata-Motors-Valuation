@@ -86,7 +86,7 @@ This repository delivers a comprehensive suite of professional valuation models 
 ## Disclaimers & Licensing
 
 - All financial data and modeling based on FY24 (global) and FY25E (Indian) with full citation of sources where applicable.
-- Hyundai India is treated as both an Indian peer due to dual market presence.
+- Hyundai India is treated as an Indian peer due to dual market presence.
 - Open for academic and non-commercial use. Please attribute this repo if you use the models, code, or report structure elsewhere.
 
 ---
