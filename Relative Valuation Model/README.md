@@ -27,9 +27,9 @@ This repository presents a comprehensive, segment-linked **relative valuation mo
     - Indian Only: ₹2,508 (mean)
     - Global Only: ₹943 (mean)
     - Blended: ₹1,901 (mean)
-    - **SOTP Integrated Price:** ₹1,928 (segment-weighted)
-  - **CMP as of July 30, 2025:** ₹688
-  - Upside from CMP: 176%–278% depending on method
+    - **SOTP Integrated Price:** ₹1,643.04 (segment-weighted)
+  - **CMP as of June 30, 2025:** ₹688
+  - Upside from CMP: 139%–176% depending on method
 
 - **Sensitivity & Transparency:**
   - Mean and median (and full range) shown for each multiple set
@@ -91,7 +91,7 @@ This repository presents a comprehensive, segment-linked **relative valuation mo
 - **Net debt:** Estimated at ₹30,706 Cr (from BS projections)
 - **Multiples weighting:** Blended 60:40 for realism
 - **Exclusions:** Two-wheeler specialists omitted from averages for fair comparability
-- **Hyundai:** Treated as both Indian for peer linkage
+- **Hyundai:** Treated as Indian for peer linkage
 - **Segment splits:** Approximated based on last reported TCL segmental disclosure
 
 ## How to Update
