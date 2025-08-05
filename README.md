@@ -10,16 +10,21 @@ This repository delivers a comprehensive suite of professional valuation models 
 
 /Tata Motors-valuation
 │
-├── README.md # [This file]
-├── Valuation Report/
+├── README.md # This file
+│   ├── Valuation Report 
 │
-├── DCF Model/
-│ ├── DCF_Model.xlsx
-│ └── README.md
+├── dcf/
+│   ├── DCF_Model.xlsx
+│   └── README.md
 │
-├── Relative Valuation Model/
-│ ├── Relative_Valuation_Model.xlsx
-│ └── README.md
+├── ddm/
+│   ├── DDM_Model.xlsx
+│   └── README.md
+│
+├── relative/
+│   ├── Relative_Valuation_Model.xlsx
+    └── README.md
+
 
 
 
