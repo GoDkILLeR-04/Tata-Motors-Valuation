@@ -10,7 +10,7 @@ Independent equity research on Tata Motors using DCF, trading comparables, and S
 ---
 
 ## 🔹 Quick Read (Recommended)
-📄 **[Valuation Summary – Recruiter Version (2 Pages)](Valuation_Summary.pdf)**  
+📄 **[Valuation Summary – Recruiter Version (2 Pages)](Valuation_Summary)**  
 > Executive summary, valuation triangulation, catalysts, risks, and investment conclusion.
 
 ---
@@ -45,7 +45,7 @@ JLR margin assumptions are the primary valuation driver. Under conservative marg
 ---
 
 ## 🔹 Full Research
-📘 **[Full Equity Valuation Report (19 Pages)](Full_Valuation_Report.pdf)**
+📘 **[Full Equity Valuation Report (19 Pages)](Full_Valuation_Report)**
 
 ---
 
