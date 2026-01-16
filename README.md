@@ -55,6 +55,6 @@ JLR margin assumptions are the primary valuation driver. Under conservative marg
 **Contact:**  
 For inquiries, feedback, or collaboration requests, please open an issue or connect via LinkedIn.
 
-_Last updated: July 31, 2025_
+
 
 
